@@ -1,0 +1,11 @@
+graphql:
+  servlet:
+    mapping: /graphql
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+      path: "/graphiql"
+
+server:
+  port: 8081

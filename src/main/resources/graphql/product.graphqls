@@ -1,0 +1,16 @@
+type Product {
+    id: ID!
+    name: String!
+    quantity: String
+    type: String!
+    category: Category
+}
+
+extend type Mutation {
+    newProduct(name: String!, quantity: String!, type: String!, category: ID!): Product!
+}
+
+extend type Query {
+    getAllProducts: [Product]!
+    getProduct(id: ID): Product!
+}
